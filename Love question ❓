@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Question</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#0f172a;
+  font-family:Arial, sans-serif;
+  color:white;
+}
+.box{
+  text-align:center;
+}
+h1{
+  font-size:30px;
+  margin-bottom:30px;
+}
+button{
+  padding:15px 35px;
+  font-size:18px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  margin:10px;
+}
+.yes{
+  background:#22c55e;
+  color:white;
+}
+.no{
+  background:#ef4444;
+  color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h1 id="question">Do you love me?</h1>
+  <button class="yes" onclick="yesClick()">Yes</button>
+  <button class="no" onclick="noClick()">No</button>
+</div>
+
+<script>
+function yesClick(){
+  document.querySelector(".box").innerHTML = 
+  "<h1>Shukar ha 🤍<br>but Thanks 🥰</h1>";
+}
+
+function noClick(){
+  document.getElementById("question").innerText = 
+  "Aik bar phir soch lo";
+}
+</script>
+
+</body>
+</html>
